@@ -17,6 +17,10 @@
     font-weight: bold;
 }
 
+*{
+    text-wrap: balance;
+}
+
 html {
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='75' height='90' viewport='0 0 100 100' style='fill:black;font-size:45px;'><text y='50%'>💖</text></svg>") 16 0, auto;
 }
@@ -103,8 +107,8 @@ input[type="color"]::-webkit-color-swatch {
     width: 44px;
     height: 80px;
 
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: 50;
     left: -1;
     writing-mode: vertical-rl;
     text-align: center;
@@ -399,7 +403,7 @@ table th {
     font-weight: 400;
     text-decoration: none;
     vertical-align: baseline;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: "Century";
     font-style: normal
 }
@@ -552,7 +556,7 @@ table th {
     color: var(--main-bg-color);
     text-decoration: none;
     vertical-align: baseline;
-    font-size: 1.1rem
+    font-size: 1rem
 }
 
 .c51 {
@@ -644,7 +648,7 @@ table th {
     padding-top: 0pt;
     padding-bottom: 0pt;
     line-height: 1.5;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .c26 {
@@ -659,7 +663,7 @@ table th {
     padding-bottom: 0pt;
     line-height: 1.15;
     text-align: justify;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .c66 {
@@ -708,13 +712,11 @@ table th {
     padding-top: 12pt;
     padding-bottom: 0pt;
     line-height: 2.0;
-    text-align: justify;
 }
 
 .c19 {
     border-spacing: 0;
-    border-collapse: collapse;
-    margin-right: auto
+    margin: auto;
 }
 
 .c45 {
@@ -747,7 +749,7 @@ table th {
 
 .c57 {
     vertical-align: baseline;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-style: normal
 }
 
@@ -774,7 +776,7 @@ table th {
 
 .c48 {
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: "Consolas"
 }
 
@@ -786,7 +788,7 @@ table th {
 
 .c41 {
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: "Arial"
 }
 
@@ -852,11 +854,11 @@ table th {
 }
 
 .c36 {
-    height: 1.1rem
+    height: 1rem
 }
 
 .c79 {
-    font-size: 1.1rem
+    font-size: 1rem
 }
 
 .c50 {
@@ -939,7 +941,7 @@ table th {
 .subtitle {
     padding-top: 0pt;
     color: #666666;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-bottom: 16pt;
     font-family: "Arial";
     line-height: 1.15;
@@ -951,7 +953,7 @@ table th {
 
 li {
     color: var(--main-bg-color);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: "Century";
     margin-top: 25px;
 }
@@ -959,7 +961,7 @@ li {
 p {
     margin: 0;
     color: var(--main-bg-color);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: "Arial"
 }
 
@@ -992,7 +994,7 @@ h2 {
 h3 {
     padding-top: 16pt;
     color: #434343;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-bottom: 4pt;
     font-family: "Arial";
     line-height: 1.15;
@@ -1018,7 +1020,7 @@ h4 {
 h5 {
     padding-top: 12pt;
     color: #666666;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-bottom: 4pt;
     font-family: "Arial";
     line-height: 1.15;
@@ -1031,7 +1033,7 @@ h5 {
 h6 {
     padding-top: 12pt;
     color: #666666;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-bottom: 4pt;
     font-family: "Arial";
     line-height: 1.15;
@@ -1040,6 +1042,16 @@ h6 {
     orphans: 2;
     widows: 2;
     text-align: justify;
+}
+
+#content{
+    padding-left: 0px;
+}
+
+@media only screen and (max-width: 750px) and (min-width: 550px) {
+#content{
+    padding-left: 50px;
+}
 }
 
 @media only screen and (max-width: 550px) {
