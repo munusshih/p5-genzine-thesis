@@ -106,17 +106,23 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .nav-bg {
-    width: 44px;
+    width: 42px;
     height: 80px;
 
     position: absolute;
-    bottom: 50;
-    left: -1;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 20px;
+    padding-right: 10px;
+
     writing-mode: vertical-rl;
     text-align: center;
     text-orientation: mixed;
     font-size: 14px;
-    color: var(--main-code-color) ;
+    color: var(--main-bg-color) ;
+
+    background: linear-gradient(217deg, var(--main-code-color), var(--main-text-color));
+    /* mix-blend-mode: multiply; */
 }
 
 .circle {
@@ -537,7 +543,7 @@ table th {
     text-align: justify;
 
     &:before{
-        content:"_"
+        content:"..."
     }
 }
 
@@ -1068,6 +1074,10 @@ tr td:first-child span::before{
     text-align: left;
     line-height: 1.5rem;
 }
+
+tr td:first-child span::before{
+    content: ""
+}
 }
 
 @media only screen and (max-width: 640px) {
@@ -1082,7 +1092,8 @@ tr td:first-child span::before{
         margin-left: 24px;
     }
 
-    tr td .c0::before{
+
+    tr td:first-child span::before{
         content: ""
     }
 
