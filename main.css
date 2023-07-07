@@ -102,7 +102,7 @@ input[type="color"]::-webkit-color-swatch {
 
     background-color: var(--main-bg-color);
     width: 42px;
-    height: 100vh;
+    height: 100dvh;
 }
 
 .nav-bg {
@@ -110,8 +110,9 @@ input[type="color"]::-webkit-color-swatch {
     height: 80px;
 
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: 0;
+
     padding-bottom: 20px;
     padding-right: 10px;
 
@@ -1072,7 +1073,7 @@ tr td:first-child span::before{
 
 .c11, .c3, .c25, .c35, .c12, .c18, .c49, .c33, .c42, .c51, .c5, .c30, .c15, .c38{
     text-align: left;
-    line-height: 1.5rem;
+    /* line-height: 1.5rem;  */
 }
 
 tr td:first-child span::before{
@@ -1081,6 +1082,18 @@ tr td:first-child span::before{
 }
 
 @media only screen and (max-width: 640px) {
+
+    .circle {
+        width: 45px;
+        height: 45px;
+        line-height: 2.4rem;
+        font-size: 1rem;
+    }
+
+    input[type="color"] {
+        width: 50px;
+        height: 50px;
+    }
 
 
     .c11, .c3, .c25, .c35, .c12, .c18, .c49, .c33, .c42, .c51, .c5, .c30, .c15, .c38{
@@ -1124,9 +1137,16 @@ tr td:first-child span::before{
     }
 
     #nav{
-        left:-53px;
-        padding-top: 50px;
+        width: 55px;
+        left:-68px;
+        padding-top: 60px;
         transition: left 1s ease-in-out;
+    }
+
+    .nav-bg {
+        bottom: 50px;
+        padding-left: 5px;
+        padding-right: 18px;
     }
 
     .open{
