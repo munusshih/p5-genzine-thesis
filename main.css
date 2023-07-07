@@ -114,7 +114,7 @@ input[type="color"]::-webkit-color-swatch {
     text-align: center;
     text-orientation: mixed;
     font-size: 14px;
-    color: var(--main-text-color) ;
+    color: var(--main-code-color) ;
 }
 
 .circle {
