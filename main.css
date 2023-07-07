@@ -405,7 +405,9 @@ table th {
     vertical-align: baseline;
     font-size: 1rem;
     font-family: "Century";
-    font-style: normal
+    font-style: normal;
+    orphans: 2;
+    widows: 2;
 }
 
 .c11 {
@@ -486,7 +488,7 @@ table th {
 
 .c30 {
     padding-top: 0pt;
-    text-indent: 36pt;
+    margin-left: 36pt;
     padding-bottom: 0pt;
     line-height: 2.0;
     page-break-after: avoid;
@@ -689,7 +691,6 @@ table th {
 
 .c52 {
     -webkit-text-decoration-skip: none;
-    color: #1155cc;
     text-decoration: underline;
     text-decoration-skip-ink: none
 }
@@ -770,7 +771,7 @@ table th {
     width: 100%;
 
     box-sizing: border-box;
-    padding: 50pt;
+    padding: 2rem;
     margin: auto;
 }
 
@@ -1048,6 +1049,10 @@ h6 {
     padding-left: 0px;
 }
 
+tr td .c0::before{
+    content: "Fig "
+}
+
 @media only screen and (max-width: 750px) and (min-width: 550px) {
 #content{
     padding-left: 50px;
@@ -1057,7 +1062,40 @@ h6 {
 @media only screen and (max-width: 550px) {
 
     html{
-        font-size: 0.7em;
+        font-size: 1.1em;
+    }
+
+    .c11, .c3, .c25, .c35, .c12, .c18, .c49, .c33, .c42, .c51, .c5, .c30, .c15, .c38{
+        text-align: left;
+        line-height: 1.5rem;
+    }
+
+    .c35{
+        margin-left: 24px;
+    }
+
+    tr td .c0::before{
+        content: ""
+    }
+
+    .c28 .c0{
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+
+    .c16 .c0{
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+
+    .c28, .c75{
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+
+    #titles{
+        height: 20rem;
+        /* border: 1px solid #fff; */
     }
 
     #sidebar{
