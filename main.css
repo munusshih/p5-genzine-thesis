@@ -18,19 +18,19 @@
 }
 
 *{
-    text-wrap: balance;
+    /* text-wrap: balance; */
 }
 
 html {
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='75' height='90' viewport='0 0 100 100' style='fill:black;font-size:45px;'><text y='50%'>💖</text></svg>") 16 0, auto;
 
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 :root {
-    --main-bg-color: white;
-    --main-text-color: black;
-    --main-code-color: #f0f0f0;
+    --main-bg-color: black;
+    --main-text-color: white;
+    --main-code-color: #aaa;
 }
 
 input[type="color"] {
@@ -150,6 +150,7 @@ input[type="color"]::-webkit-color-swatch {
 
 a {
     text-decoration: none;
+    color: var(--main-code-color)
 }
 
 body {
@@ -1059,12 +1060,30 @@ h6 {
     padding-left: 0px;
 }
 
-tr td:first-child span::before{
+#sidebar{
+    position: fixed;
+    left: -200px;
+}
+
+tr td:first-child .c0::before{
     content: "Fig "
+}
+
+.c28 .c0, .c16 .c0, .c28, .c75, .c34 span{
+    font-size: .8rem;
+    line-height: 1rem;
 }
 
 .c11, .c3, .c25, .c35, .c12, .c18, .c49, .c33, .c42, .c51, .c5, .c30, .c15, .c38{
     line-height: 2rem;
+}
+
+.fulfill{
+    margin: auto;
+    width: 80%;
+    max-width: 550px;
+    widows: 2;
+    orphans: 2;
 }
 
 @media only screen and (max-width: 750px) and (min-width: 640px) {
@@ -1109,21 +1128,6 @@ tr td:first-child span::before{
 
     tr td:first-child span::before{
         content: ""
-    }
-
-    .c28 .c0{
-        font-size: .8rem;
-        line-height: 1rem;
-    }
-
-    .c16 .c0{
-        font-size: .8rem;
-        line-height: 1rem;
-    }
-
-    .c28, .c75{
-        font-size: .8rem;
-        line-height: 1rem;
     }
 
     #titles{
