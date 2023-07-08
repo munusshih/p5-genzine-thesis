@@ -1079,6 +1079,10 @@ tr td:first-child .c0::before{
     line-height: 2rem;
 }
 
+.c26{
+    text-align: left;
+}
+
 .fulfill{
     margin: auto;
     width: 80%;
@@ -1097,7 +1101,7 @@ tr td:first-child .c0::before{
     /* line-height: 1.5rem;  */
 }
 
-tr td:first-child span::before{
+tr td:first-child .c0::before{
     content: ""
 }
 }
@@ -1128,7 +1132,7 @@ tr td:first-child span::before{
     }
 
 
-    tr td:first-child span::before{
+    tr td:first-child .c0::before{
         content: ""
     }
 
